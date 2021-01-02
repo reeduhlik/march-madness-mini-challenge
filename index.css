@@ -1,0 +1,271 @@
+
+body {
+  margin: 0;
+    font-family: "Calibri";
+        background: #E44D26;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #F16529, #E44D26);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #F16529, #E44D26); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-repeat
+    background-size: cover;
+    height: 100%;
+}
+*{
+    transition: .3s all;
+}
+
+.column{
+    display: block;
+    width: 25%;
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+.container3{
+    width: 90%;
+    background: #e7e7e7;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    margin-bottom: 40px;
+    padding-bottom: 30px;
+}
+h1{
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 20px;
+}
+h3{
+  width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 900px;
+}
+.container {
+  display: block;
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 1em;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+h4{
+    font-size: 24px;
+}
+h6{
+    font-size: 18px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 900px;
+}
+#num{
+    color: white;
+    padding: 9px;
+    background: #007849;
+    border-radius: 7px;
+}
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #bbb;
+    border-radius: 5px;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #328cc1;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+#name{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    background: #f6f6f6;
+    width: 90%;
+    max-width: 800px;
+    height: 50px;
+    font-size: 17px;
+    padding-left: 1%;
+    border: 3px solid #aaa;
+    border-radius: 3px;
+    color: black;
+    font-family: "Circular";
+}
+#tiebreaker{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    background: #f6f6f6;
+    width: 90%;
+    max-width: 800px;
+    height: 50px;
+    font-size: 17px;
+    padding-left: 1%;
+    border: 3px solid #aaa;
+    border-radius: 3px;
+    color: black;
+    font-family: "Circular";
+}
+#submit{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    background: #0375b4;
+    width: 92%;
+    max-width: 900px;
+    height: 50px;
+    font-size: 17px;
+    font-family: "Circular";
+    color: white;
+    border: 0;
+    border-radius: 3px;
+    transition: .3s all;
+}
+#submit:hover{
+    background: #199ee8;
+    cursor: pointer;
+}
+.countdown table{
+  width: 92%;
+  max-width: 800px;
+    margin-top: 30px;
+  background: orange;
+ margin-left: auto;
+    margin-right: auto;
+    border: 0;
+        box-shadow: 0px 0px 12px 3px #000;
+}
+.countdown th{
+    font-size: 20px;
+    padding-top: 10px;
+    color: white;
+}
+
+.countdown td{
+    height: 50px;
+    border-bottom: 3px solid black;
+    font-family: "Scoreboard";
+    text-align: center;
+    font-size: 5em;
+    width: 200px;
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+.container4{
+    background: #f6f6f6;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1%;
+    margin-top: 40px;
+    border: 3px solid #aaa;
+    border-radius: 3px;
+    min-height: 750px;
+}
+#sheet{
+    background: white;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+    border: none;
+     border-collapse: collapse;
+    table-layout: fixed;
+    font-size: 1.5vw;
+}
+#sheet tr{
+    height: 60px;
+}
+#sheet th{
+    background: #328cc1;
+   color: white;
+}
+
+#sheet td {
+    text-align: center;
+}
+#sheet tr:nth-child(even){
+    background: #ddd;
+}
+@media only screen and (min-width: 1000px) {
+    #sheet{
+        font-size: 18px;
+    }
+    
+}
+@media only screen and (max-width: 600px) {
+    #sheet{
+        font-size: 9px;
+    }
+    
+}
+@media only screen and (max-width: 600px) {
+    .column{
+        float: left;
+        width: 90%;
+        margin-left: 10%;
+    }
+    .container4{
+        min-height: 2500px;
+    }
+}
+@media only screen and (min-width: 600px) {
+    .column{
+        font-size: 13px;
+    }
+}
+@media only screen and (min-width: 1100px) {
+    .column{
+        font-size: 18px;
+    }
+}
